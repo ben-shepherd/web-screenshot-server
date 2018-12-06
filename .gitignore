@@ -4,6 +4,7 @@
 
 # Test files
 src/server/test_files/
+src/server/screenshots/
 
 ### Node ###
 # Logs
