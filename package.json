@@ -4,6 +4,8 @@
   "description": "Basic Express Template for a quick start up",
   "main": "src/server/index.js",
   "scripts": {
+    "build": "babel -s src --out-dir=dist",
+    "dist": "cd src/server && babel-node --presets env index.js",
     "start": "cd src/server && nodemon --inspect --exec babel-node --presets env index.js",
     "test": "cd src/server && nodemon --inspect --exec babel-node --presets env test.js"
   },
@@ -29,6 +31,7 @@
     "mysql": "^2.16.0",
     "node-webshot": "^1.0.3",
     "nodemon": "^1.17.5",
+    "puppeteer": "^1.11.0",
     "shortid": "^2.2.14",
     "uniqid": "^5.0.3",
     "url": "^0.11.0",

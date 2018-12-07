@@ -1,6 +1,17 @@
 /**
  * Write your tests here
  */
-import { getCookies } from './libs/webshot'
+import { saveFile, exists, getFiles } from './libs/files'
 
-getCookies()
+(async() => {
+
+    try {
+        //let request = await saveFile('http://www.google.com', 'somewhere.jpg', 'Ads')
+
+        let request = await getFiles('None')
+        console.log({'test request': request})
+    }
+    catch (err) {
+        console.log({err})
+    }
+})()
